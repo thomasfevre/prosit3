@@ -3,12 +3,6 @@
 
 using namespace std;
 
-CLpoint3D::CLpoint3D() : m1_z(0)
-{
-	CLpoint::CLpoint(0, 0);
-	m_type = 2;
-}
-
 CLpoint3D::CLpoint3D(float x, float y, float z) : m1_z(z)
 {
 	m_x = x;

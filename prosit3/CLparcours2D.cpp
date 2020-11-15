@@ -18,8 +18,8 @@ void CLparcours2D::ajouterPoint(CLpoint* p) {
 
 void CLparcours2D::calculDistance() {
 	double resultat = 0;
-	for (int i = 0; i < m_nbr_p-1; i++) {
-		resultat += sqrt(pow((listep[i+1]->getPoint(1) - listep[i]->getPoint(1)), 2) + pow((listep[i + 1]->getPoint(2) - listep[i]->getPoint(2)), 2));
+	for (long int i = 0; i < (m_nbr_p-1); i++) {
+		resultat += sqrt(pow((listep[((long int)i + 1)]->getPoint(1) - listep[i]->getPoint(1)), 2) + pow((listep[((long int)i + 1)]->getPoint(2) - listep[i]->getPoint(2)), 2));
 	}
 	cout << endl << "distance : " << resultat << endl;
 }

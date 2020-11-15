@@ -7,7 +7,6 @@
 class CLpoint3D : public CLpoint
 {
 public:
-    CLpoint3D();
     CLpoint3D(float, float, float);
     void virtual afficher();
     double virtual getPoint(int);
