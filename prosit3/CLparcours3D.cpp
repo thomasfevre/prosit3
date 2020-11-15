@@ -13,7 +13,7 @@ CLparcours3D::CLparcours3D(int n)
 
 void CLparcours3D::calculDistance() {
 	double resultat = 0;
-	for (int i = 0; i < m_nbr_p - 1; i++) {
+	for (float i = 0; i < m_nbr_p - 1; i++) {
 		resultat += sqrt(pow((listep[i+1]->getPoint(1) - listep[i]->getPoint(1)), 2) + pow((listep[i + 1]->getPoint(2) - listep[i]->getPoint(2)), 2) + pow((listep[i + 1]->getPoint(3) - listep[i]->getPoint(3)), 2));
 	}
 	cout <<endl << "distance : " << resultat << endl;
